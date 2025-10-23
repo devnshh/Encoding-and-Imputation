@@ -15,7 +15,7 @@ print("Enter a number for each category")
 for category in order:
     while True:
         try:
-            value = eval(input(f"Enter a number for '{category}': "))
+            value = int(input(f"Enter a number for '{category}': "))
             custom_order[category] = value
             break
         except ValueError:
